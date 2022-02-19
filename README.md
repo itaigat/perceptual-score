@@ -30,3 +30,13 @@ if self.permute_first_batch:
 else:
     first = self.first[idx]
 ```
+## Citation
+
+```latex
+@inproceedings{gat2021perceptual,
+  title={Perceptual Score: What Data Modalities Does Your Model Perceive?},
+  author={Gat, Itai and Schwartz, Idan and Schwing, Alex},
+  booktitle={NeurIPS},
+  year={2021}
+}
+```
