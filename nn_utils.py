@@ -14,7 +14,7 @@ def evaluate_risk(data_loader: DataLoader, model: nn.Module, loss_fn: nn.Module,
 
         outputs = model(first_modality, second_modality)
 
-        loss = loss_fn(outputs, labels).mean()
+        loss = loss_fn(outputs, labels).sum()
 
         running_loss += loss.detach().cpu().item()
         data_points += first_modality.shape[0]
